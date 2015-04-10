@@ -1,0 +1,104 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/* universal */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+}
+
+
+
+body {
+	padding-top: 70px;
+	margin-bottom: 60px;
+	background-color: #e9eaed
+}
+
+
+/* nav */
+
+.nav-pills li a{
+	color: #fff;
+	&:hover{
+	 color: #000;
+	}
+}
+
+.nav-pills {
+	padding-top: 5px;
+}
+
+#logo{
+	font-size: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding-top: 8px;
+	text-decoration: none;
+	float: left;
+	font-weight: bold;
+
+}
+
+
+/* footer */
+footer {
+	position: absolute;
+	bottom: 0;
+	margin-top: 50px;
+	border-top: 1px solid #D3D3D3;
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	p {
+		padding-top: 15px;
+		text-align: center;
+	}
+}
+
+/* index */
+
+.index-posts{
+	font-size: 18px;
+	border: 1px solid #dfe0e4;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+
+	p{
+		padding: 10px 10px 0 10px;
+	}
+
+}
+
+.author {
+	border-top: 1px solid #dfe0e4;
+	font-size: 12px;
+	font-weight: 600;
+	color: #4C4C4C;
+}
+
+span{
+	color: #9197a3;
+}
+
+/* forms */
+
+.form-control{
+	margin-bottom: 20px;
+	border: 1px solid #bbb;
+}
+
