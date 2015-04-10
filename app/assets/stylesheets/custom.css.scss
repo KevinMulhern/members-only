@@ -72,16 +72,22 @@ footer {
 /* index */
 
 .index-posts{
+	margin-top: 5px;
 	font-size: 18px;
 	border: 1px solid #dfe0e4;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	border-radius: 5px;
 	background-color: #fff;
+	padding: 5px 10px 0 10px;
 
 	p{
 		padding: 10px 10px 0 10px;
 	}
 
+}
+
+.posts:last-child {
+	margin-bottom: 100px;
 }
 
 .author {

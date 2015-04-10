@@ -1,15 +1,16 @@
+<% provide(:title, "Home") %>
 <h1 class=>Latest Posts</h1>
 <% if logged_in? %>
 	<%= link_to "Create New Post", create_post_path, class: "create-post col-md-2 col-md-offset-3" %>
 <% end %>
 
 <div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-6 col-md-offset-3 posts">
 		<% @posts.reverse_each do |p| %>
 			<div class="index-posts">
 				<p><%= p.body_text %> </p>
 					<p class="author"><span>Written by:</span> <% if logged_in? %>
-								<%=user_name(p.id) %>
+								<%= p.user.name %>
 							<% else %>
 								<%= "Log in to view" %></p> 
 							<% end %>
